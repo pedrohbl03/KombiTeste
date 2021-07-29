@@ -14,6 +14,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 body {
     position: relative;
 }
@@ -282,14 +283,16 @@ label {
 .btn-submit .fa-check {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: all .5s, opacity 0.5s linear;
+
     
 }
 
 .btn-submit:hover .fa-check {
+    padding: 0 30px 0 10px !important;
+    transition: all .5s linear;
     visibility: visible;
     opacity: 1;
     color: black;
-    
 }
 
