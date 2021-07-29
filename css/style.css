@@ -247,3 +247,49 @@ label {
     padding: .5rem;
     font-weight: bold;
 }
+
+.btn-submit:hover .fa-arrow-right{
+    animation: pulse .8s infinite;;
+}
+
+@keyframes pulse {
+	0% {
+		transform: translateX(2px);
+	}
+
+    50% {
+		transform: translateX(20px);
+	}
+    
+	100% {
+		transform: translateX(2px);
+	}
+}
+
+
+
+
+/* MODAL STYLES */ 
+
+.fa-check {
+    padding: 0 10px !important;
+}
+
+.btn-submit {
+    padding-left: 50px !important;
+}
+
+.btn-submit .fa-check {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    
+}
+
+.btn-submit:hover .fa-check {
+    visibility: visible;
+    opacity: 1;
+    color: black;
+    
+}
+

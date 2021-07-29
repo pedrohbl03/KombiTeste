@@ -1,3 +1,4 @@
+/* Focus menus section */
 let focus = document.querySelectorAll('.nav-link');
 focus.forEach(navitem => {
     navitem.addEventListener('click', function(){
@@ -10,7 +11,6 @@ focus.forEach(navitem => {
 
 
 /* MASKS AND VALIDATES*/
-
 const masks = {
     
     tel(value){
@@ -32,7 +32,6 @@ document.querySelectorAll('input').forEach(($input) => {
 
 
 /* Validation Name */
-
 function validation () {
     var name = document.getElementById('name-input').value
 
@@ -43,4 +42,22 @@ function validation () {
     else if (!!name.match(/[A-Z][a-z]* [A-Z][a-z]*/) == 0) {
         alert('Digite um nome completo, lembre-se das iniciais maiusculas')
     }
+
+    else {
+        alert('Formulario Enviado com Sucesso!')
+    }
 }
+
+/* OPEN MODAL CHECKBOX CHECKED */
+
+
+/* MODAL AUTOCHECKED ON CLICKED "EU CONCORDO" */
+let checkbox = document.querySelectorAll('.form-check-input')
+let autoCheckBtn = document.getElementById('btn-check')
+
+autoCheckBtn.addEventListener('click', () => {
+    for (let current of checkbox){
+        current.checked = true
+    }
+})
+
