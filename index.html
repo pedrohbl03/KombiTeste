@@ -4,34 +4,39 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Teste Kombi Tela 1 - Preview</title>
   </head>
-  <body>
-    <!-- NAVBAR START-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue py-4">
-        <div class="container mx-auto">
-          <a class="navbar-brand logo" href="#"><img class="logo"src="./images/svg/326663_language_web_icon.svg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active mx-5 px-2" aria-current="page" href="#">LOREM IPSUM</a>
-              <a class="nav-link mx-5 px-2" href="#">LINK IPSUM</a>
-              <a class="nav-link mx-5 px-2" href="#">LINK IPSUM</a>
-              <a class="nav-link mx-5 px-2" href="#">LINK IPSUM</a>
+  <body data-bs-spy="scroll" data-bs-target="#NavbarSpy" data-bs-offset="80" tabindex="0">
+      <!-- HEADER START -->
+      <header id="header" class="bg-dark-blue">
+        <!-- NAVBAR START-->
+        <nav id="NavbarSpy"class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-blue py-4">
+          <div class="container mx-auto">
+            <a class="navbar-brand logo" href="#"><img class="logo"src="./images/svg/326663_language_web_icon.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+              <div id="NavbarSpy" class="navbar-nav">
+                <a class="nav-link mx-5 px-2" aria-current="page" href="#section-one">LOREM IPSUM</a>
+                <a class="nav-link mx-5 px-2" href="#section-two">LINK IPSUM</a>
+                <a class="nav-link mx-5 px-2" href="#section-three">LINK IPSUM</a>
+                <a class="nav-link mx-5 px-2" href="#contact">LINK IPSUM</a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- NAVBAR END -->
-      </nav>
-
-      <!-- HEADER START -->
-      <header class="bg-dark-blue">
+          <!-- NAVBAR END -->
+        </nav>
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
@@ -59,8 +64,8 @@
               </div>
             </div>
             <div class="col-lg-5">
-              <h1>LOREM<br>ISPUM</h1>
-              <p class="text-gray about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint omnis commodi sed repellendus consequuntur ipsa similique tenetur autem,</p>
+              <h1 class="py-lg-0 py-5">LOREM ISPUM</h1>
+              <p class="text-gray special-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint omnis commodi sed repellendus consequuntur ipsa similique tenetur autem,</p>
             </div>
           </div>
         </div>
@@ -74,7 +79,7 @@
 
 
       <main>
-        <section class="mt-md-5 wave-margin">
+        <section id="section-one" class="mt-md-5 wave-margin">
           <div class="container py-5">
             <div class="row align-items-center">
               <div class="col-lg-7">
@@ -90,7 +95,7 @@
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,109.03 C196.66,122.86 264.95,8.39 503.10,115.95 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #fff"></path></svg>
           </div>
         </section>
-        <section class="bg-light-blue wave-padding">
+        <section id="section-two" class="bg-light-blue wave-padding">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-6">
@@ -100,7 +105,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, incidunt praesentium dolorem quos, totam consequuntur sit velit quae dicta expedita repellat. Vitae dicta fugit rerum accusamus porro nulla, harum esse?</p>
               </div>
               <div class="col-lg-6">
-                <img class="world-img" src="./images/png/326663_language_web_icon.png" alt="">
+                <img class="world-img" src="./images/png/LanguageWithBackground.png" alt="">
               </div>
             </div>
           </div>
@@ -108,7 +113,7 @@
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,109.03 C196.66,122.86 264.95,8.39 503.10,115.95 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #96e0f5"></path></svg>
           </div>
         </section>
-        <section>
+        <section id="section-three" data-spy="scroll" data-target="NavbarSpy" data-offset="0">
           <div class="container py-5">
             <div class="row">
               <div class="col-lg-4 mb-5">
@@ -235,8 +240,7 @@
               </div>
               <div class="col-lg-6">
                 <h2>
-                  SELECT<br>
-                  RANK
+                  SELECT RANK
                 </h2>
                 <p class="py-5">&lt &lt &lt &lt &lt &lt &lt DNEC MALESUADA ARCU ULLAMCDRPER.</p>
               </div>
@@ -247,7 +251,7 @@
           </div>
         </section>
       </main>
-      <footer class="bg-dark-blue wave-padding">
+      <footer id="contact" class="bg-dark-blue wave-padding">
         <div class="container py-5 text-light">
           <div class="row">
             <div class="col-lg-6">
@@ -256,22 +260,22 @@
               <a class="d-block mt-5 pt-5 text-light" href="">POLÍTICA PRIVACIDADE</a>
             </div>
             <div class="col-lg-6">
-              <form class="px-5">
+              <form class="px-5" onsubmit="validation()">
                 <label for="name-input" class="form-label">NOME COMPLETO</label>
-                <input type="name" class="form-control" id="name-input" placeholder="">
+                <input type="name" class="form-control" id="name-input" placeholder="Pedro Lima" required>
 
                 <label for="email-input" class="form-label">E-MAIL</label>
-                <input type="email" class="form-control" id="email-input" placeholder="">
+                <input type="email" class="form-control"  id="email-input" placeholder="lalalalala@hotmail.com" required>
 
                 <label for="tel-input" class="form-label">CELULAR</label>
-                <input type="tel" class="form-control" id="tel-input" placeholder="">
+                <input type="tel" class="form-control" id="tel-input" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(11) 96445-1184" maxlength="15" data-js="tel" required>
                 <div class="form-check my-3">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" id="flexCheckDefault" required>
                   <label class="form-check-label p-0" for="flexCheckDefault">
                     ESTOU DE ACORDO COM AS <a class="text-light" href="">POLÍTICAS</a>
                   </label>
                 </div>
-                <input class="btn-submit w-100"type="submit" value="ENVIAR AGORA >>">
+                <button class="btn-submit w-100" type="submit">ENVIAR AGORA >></button>
               </form>
             </div>
           </div>
@@ -283,6 +287,8 @@
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
 
   </body>
 </html>

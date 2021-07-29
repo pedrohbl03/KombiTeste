@@ -1,5 +1,6 @@
 /* Utilitys */
 
+
 :root {
     --dark-blue: #021925;
     --white: #ffffff;
@@ -9,6 +10,13 @@
     --red: #ff0000;
 }
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+}
 
 h1 {
     color: var(--white);
@@ -16,9 +24,22 @@ h1 {
     font-size: 5rem;
 }
 
+
 h2 {
-    font-weight: 300;
-    font-size: 5rem;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+
+@media screen and (max-width: 290px){
+    
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3.5rem;
+    };
 }
 
 .text-gray {
@@ -57,7 +78,9 @@ h2 {
 
 
 
+
 /* Navbar */
+
 
 .nav-link {
     border: transparent solid 2px;
@@ -70,18 +93,22 @@ h2 {
 
 .logo {
     filter: brightness(0) invert(1);
-    width: 75px;
+    width: 50px;
 }
 
 /* Header */
 /* Slider */
+
+header > .container {
+    margin-top: 100px;
+}
 
 header {
     position: relative;
     margin-bottom: 150px;
 }
 
-.about-content::before{
+.special-margin::before{
     content: '';
     display: block;
     width: 40%;
@@ -90,9 +117,13 @@ header {
     background: var(--light-blue);
 }
 
-.carousel-item {
-    min-height: 835px;
+.carousel-item > img {
     width: 100%;
+    max-width: 500px;
+}
+
+.carousel-item {
+    min-height: 623px;;
 }
 
 .slide-video {
@@ -124,6 +155,8 @@ header {
 .carousel-indicators .active {
     background-color: var(--light-blue);
 }
+
+
 
 
 /* Section one */
@@ -190,6 +223,10 @@ input.form-control{
     border-radius: .5rem !important;
 }
 
+input, input:focus {
+    color: var(--white) !important;
+}
+
 label {
     padding: .5rem 0 0 0;
 }
@@ -210,4 +247,3 @@ label {
     padding: .5rem;
     font-weight: bold;
 }
-
