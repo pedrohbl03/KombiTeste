@@ -19,8 +19,8 @@ body {
     position: relative !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:  'Hurme Geometric Sans No.2' !important;
+h1, h2, h3, h4, h5, h6, span {
+    font-family:  'Hurme Geometric' !important;
 }
 
 h1 {
