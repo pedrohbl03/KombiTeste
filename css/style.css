@@ -119,10 +119,6 @@ h2 {
         position: absolute;
     }
 
-    header .mask-wave {
-        z-index: -999;
-    }
-
     .carousel-indicators {
         bottom: -665px !important;
     }
@@ -141,6 +137,9 @@ h2 {
 
 }
 
+header .mask-wave {
+    z-index: -999 !important;
+}
 
 header > .container {
     margin-top: 100px;
