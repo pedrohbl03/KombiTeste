@@ -1,15 +1,3 @@
-/* Focus menus section */
-let focus = document.querySelectorAll('.nav-link');
-focus.forEach(navitem => {
-    navitem.addEventListener('click', function(){
-        focus.forEach(focusMenu => focusMenu.classList.remove('active'));
-        this.classList.add('active');
-    });
-}); 
-
-
-
-
 /* MASKS AND VALIDATES*/
 const masks = {
     
@@ -48,7 +36,7 @@ function validation () {
     }
 }
 
-/* OPEN MODAL CHECKBOX CHECKED */
+
 
 
 /* MODAL AUTOCHECKED ON CLICKED "EU CONCORDO" */
@@ -61,3 +49,16 @@ autoCheckBtn.addEventListener('click', () => {
     }
 })
 
+
+document.querySelectorAll('.nav-link').forEach( (link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        var element = document.querySelector(e.target.dataset.scroll)
+
+        if (element){
+            element.scrollIntoView({behavior: 'smooth', block:'center'});
+        }
+
+    });
+})
